@@ -27,5 +27,10 @@ class AdminController extends Controller
          $data->delete();
          return redirect()->back();
     }
+    public function edit_category($id)
+    {
+        $data = Category::find($id);
+        return view('admin.edit_category',compact('data'));
+    }
 }
    

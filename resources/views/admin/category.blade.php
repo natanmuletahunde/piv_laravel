@@ -68,10 +68,8 @@
 
                         <table class="table_deg">
                             <tr>
-                                <th>
-                                    Category Name
-                                </th>
-
+                                <th>Category Name</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
 
@@ -80,6 +78,10 @@
 
                             <tr>
                                 <td>{{$data->category_name}}</td>
+
+                                <td>
+                                    <a class="btn btn-success" href="{{url('edit_category',$data->id)}}">Edit</a>
+                                </td>
                                 <td>
                                     <a class="btn btn-danger" onclick="confirmation(event)"  href="{{url('delete_category',$data->id)}}"> Delete</a>
                                 </td>
