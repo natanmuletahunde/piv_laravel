@@ -32,6 +32,9 @@ Route::get('delete_category/{d}',[AdminController::class,'delete_category'])->mi
 
 Route::get('edit_category/{d}',[AdminController::class,'edit_category'])->middleware(['auth','admin']);
 
+Route::post('update_category/{d}',[AdminController::class,'update_category'])->middleware(['auth','admin']);
+
+
 
 
 

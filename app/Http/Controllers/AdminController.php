@@ -32,5 +32,13 @@ class AdminController extends Controller
         $data = Category::find($id);
         return view('admin.edit_category',compact('data'));
     }
+    public function update_category(Request $request,$id)
+   {
+      $data = Category::find($id);
+      $data->category_name = $request->category;
+       $data->save();
+       return redirect("/view_category");
+   }
+
 }
    
