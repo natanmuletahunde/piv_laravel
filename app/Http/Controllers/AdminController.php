@@ -15,7 +15,8 @@ class AdminController extends Controller
          $category = new Category;
          $category->category_name = $request->category;
          $category->save();
-         toastr()->closeButton()->addSuccess('category added successfully');
+         toastr()->success('Your account has been suspended.');
          return redirect()->back();
     }
 }
+   
