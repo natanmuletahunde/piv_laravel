@@ -70,6 +70,8 @@ td
                     <th>
                         Category Name
                     </th>
+
+                    <th>Delete</th>
                         </tr>
 
                        @foreach ($data as $data)
@@ -77,6 +79,9 @@ td
                       
                         <tr>
                             <td>{{$data->category_name}}</td>
+                            <td>
+                                <a class="btn btn-danger" href="Delete"></a>
+                            </td>
                         </tr>
                        @endforeach
                     </table>
