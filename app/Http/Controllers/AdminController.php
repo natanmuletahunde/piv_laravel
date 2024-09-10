@@ -20,6 +20,8 @@ class AdminController extends Controller
 
          $category->save();
 
+         toastr()->addSuccess('Your account has been suspended.');
+
          return redirect()->back();
     }
 }
