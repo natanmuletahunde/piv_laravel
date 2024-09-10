@@ -25,6 +25,20 @@ margin: auto;
 border: 2px solid yellowgreen;
 margin-top: 50px;
     }
+th{
+    background-color: skyblue;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+td
+{
+    padding: 10px;
+    color:white ;
+    border:1px solid;
+}
+
 </style>
 </head>
 <body>
