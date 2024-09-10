@@ -97,6 +97,22 @@
             function confirmation(ev){
               ev.preventDefault();
               var urlToRedirect = ev.currentTarget.getAttribute('href');
+              console.log(urlToRedirect);
+
+              swal({
+                title: "Are you sure to Delete this ?",
+                text: "This delete will be paramanent",
+                icon:'warning',
+                button: true,
+                dangerMode: true,
+              })
+
+              .then((WillCancel)=>{
+                if(WillCancel)
+                {
+                    window.location.href = urlToRedirect;
+                }
+              })
             }
         </script>
 
