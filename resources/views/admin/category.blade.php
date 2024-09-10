@@ -80,7 +80,7 @@ td
                         <tr>
                             <td>{{$data->category_name}}</td>
                             <td>
-                                <a class="btn btn-danger" href="Delete"></a>
+                                <a class="btn btn-danger" href="{{url('delete_category',$data->id)}}"> Delete</a>
                             </td>
                         </tr>
                        @endforeach

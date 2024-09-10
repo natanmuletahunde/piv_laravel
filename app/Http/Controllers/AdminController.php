@@ -19,5 +19,13 @@ class AdminController extends Controller
          toastr()->success('Your account has been suspended.');
          return redirect()->back();
     }
+
+    public function delete_category($id)
+    {
+         $data = Category::find($id);
+
+         $data->delete();
+         return redirect()->back();
+    }
 }
    
