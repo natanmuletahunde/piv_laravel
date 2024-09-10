@@ -40,6 +40,23 @@
                    </div>
                   </form>
                   </div>
+               
+                  <div>
+
+                    <table>
+                        <tr>
+                    <th>
+                        Category Name
+                    </th>
+                        </tr>
+
+                        <tr>
+                            <td>Sport</td>
+                        </tr>
+                    </table>
+
+                  </div>
+
             </div>
         </div>
     </div>
