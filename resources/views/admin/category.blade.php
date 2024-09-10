@@ -71,12 +71,13 @@ td
                     </th>
                         </tr>
 
+                       @foreach ($data as $data)
+                       
+                      
                         <tr>
-                            <td>Sport</td>
+                            <td>{{$data->category_name}}</td>
                         </tr>
-                        <tr>
-                            <td>Sport</td>
-                        </tr>
+                       @endforeach
                     </table>
 
                   </div>
