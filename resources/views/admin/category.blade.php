@@ -16,6 +16,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       margin: 30px;;
     }
 </style>
 </head>
@@ -28,10 +29,10 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-
-
+                <h1 style="color:white;">Add Category</h1>
                 <div class="div_deg">
-                  <form >
+                   
+                  <form  action="{{url('add_category')}}" method="post">
                    <div>
                     <input type="text" name="category">
                       <input class="btn btn-primary" type="submit" value="Add category">
