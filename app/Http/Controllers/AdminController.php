@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\category;
+use App\Models\Category;
 
 
 class AdminController extends Controller
@@ -14,7 +14,7 @@ class AdminController extends Controller
     }
     public function add_category(Request $request)
     {
-         $category = new category;
+         $category = new Category;
 
          $category->category_name = $request->category;
 

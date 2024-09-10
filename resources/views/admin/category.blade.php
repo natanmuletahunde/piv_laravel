@@ -33,6 +33,7 @@
                 <div class="div_deg">
                    
                   <form  action="{{url('add_category')}}" method="post">
+                    @csrf
                    <div>
                     <input type="text" name="category">
                       <input class="btn btn-primary" type="submit" value="Add category">
