@@ -8,7 +8,8 @@ use App\Models\Category;
 class AdminController extends Controller
 {
     public function view_category(){
-        return view('admin.category');
+        $data= Category::all();
+        return view('admin.category',compact('data'));
     }
     public function add_category(Request $request)
     {

@@ -36,7 +36,7 @@ td
 {
     padding: 10px;
     color:white ;
-    border:1px solid;
+    border:1px solid skyblue;
 }
 
 </style>
@@ -71,6 +71,9 @@ td
                     </th>
                         </tr>
 
+                        <tr>
+                            <td>Sport</td>
+                        </tr>
                         <tr>
                             <td>Sport</td>
                         </tr>
