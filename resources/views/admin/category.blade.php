@@ -18,6 +18,13 @@
        align-items: center;
        margin: 30px;;
     }
+    .table_deg
+    {
+text-align: center;
+margin: auto;
+border: 2px solid yellowgreen;
+margin-top: 50px;
+    }
 </style>
 </head>
 <body>
@@ -43,7 +50,7 @@
                
                   <div>
 
-                    <table>
+                    <table class="table_deg">
                         <tr>
                     <th>
                         Category Name
