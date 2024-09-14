@@ -3,6 +3,15 @@
 
 <head>
 @include('admin.css');
+
+<style>
+    .div_deg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+</style>
 </head>
 <body>
     @include('admin.header');
@@ -14,7 +23,7 @@
             <div class="page-header">
                 <div class="container-fluid">
 
-            <div>
+            <div class="div_deg">
 
             <form action="">
                 <div>
