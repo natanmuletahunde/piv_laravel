@@ -22,8 +22,8 @@
                     <input type="text" name="title">
                 </div>
                 <div>
-                    <label> Desrcription </label>
-                    <input type="descriotion" name="description">
+                    <label> Descriptions </label>
+                      <textarea name="description" required></textarea>
                 </div>
                 <div>
                     <label>Price</label>
