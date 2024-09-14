@@ -42,7 +42,7 @@ class  AdminController extends Controller
      
    public function add_product()
 {
-    
+        return view('admin.add_product');
 }
 }
    
