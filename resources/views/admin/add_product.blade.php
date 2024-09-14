@@ -24,6 +24,14 @@
         width: 350px;
         height: 50px;
     }
+    textarea{
+    
+      width: 450px;
+      height: 80px;
+    }
+    .input_deg{
+        padding: 15px;
+    }
 </style>
 </head>
 <body>
@@ -39,24 +47,24 @@
             <div class="div_deg">
 
             <form action="">
-                <div>
+                <div class="input_deg">
                     <label> Product Title</label>
                     <input type="text" name="title">
                 </div>
-                <div>
+                <div class="input_deg">
                     <label> Descriptions </label>
                       <textarea name="description" required></textarea>
                 </div>
-                <div>
+                <div class="input_deg">
                     <label>Price</label>
                     <input type="price" name="price">
                 </div>
-                <div>
+                <div class="input_deg">
                     <label>Quantity</label>
                     <input type="number" name="Qty">
                 </div>
 
-                <div>
+                <div class="input_deg">
                     <label>Product category</label>
                      <select name="" id="">
                       <option value="">
@@ -66,9 +74,13 @@
                      </select>
                 </div>
 
-                <div>
+                <div class="input_deg">
                     <label>Product Image</label>
                     <input type="file" name="image">
+                </div>
+                
+                <div class="input_deg">
+                    <input class="btn btn-success" type="submit" name="add product">
                 </div>
             </form>
             </div>
