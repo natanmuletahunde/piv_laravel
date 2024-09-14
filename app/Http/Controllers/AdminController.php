@@ -60,7 +60,14 @@ class  AdminController extends Controller
    $data->quantity= $request->qty;
    $data->category= $request->category;
 
-   $
+   $image=$request->image;
+   if($image)
+   {
+    $imagename=time().'.'.$image-> getClientOriginalExtension();
+     
+     $request->image->move('products',$imagename);
+     $data->image=$imagename;
+   }
    $data->save();
 
    return redirect()->back();
