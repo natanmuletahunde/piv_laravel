@@ -11,6 +11,15 @@
         align-items: center;
         margin-top: 60px;
     }
+    h1{
+        color: white;
+    }
+    label{
+    display: inline-block;
+    width: 250px;
+    font-size: 15px;
+    color: white;
+    }
 </style>
 </head>
 <body>
@@ -22,7 +31,7 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-
+              <h1>Add Product</h1>
             <div class="div_deg">
 
             <form action="">
