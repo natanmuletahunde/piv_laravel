@@ -3,6 +3,33 @@
 
 <head>
 @include('admin.css');
+
+<style>
+
+    .div_deg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:60px;
+    }
+    .table_deg{
+       border: 2px solid greenyellow;  
+    }
+    th{
+        background: skyblue;
+        color:white;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 15px;
+    }
+    td
+    {
+        border:1px solid skyblue;
+        text-align: center;
+
+
+    }
+</style>
 </head>
 <body>
     @include('admin.header');
@@ -13,15 +40,31 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-                  <div>
+                  <div  class="div_deg">
 
-                  <table>
+                  <table class="table_deg" >
                     <tr>
                         <th>Product Title</th>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Price</th>
                         <th>Image</th>
+                    </tr>
+                    <tr>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
+                        <td>ABC</td>
                     </tr>
                   </table>
                   </div>
