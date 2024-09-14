@@ -17,8 +17,12 @@
     label{
     display: inline-block;
     width: 250px;
-    font-size: 15px;
-    color: white;
+    font-size: 18px !important;
+    color: white !important;
+    }
+    input[type="text"]{
+        width: 350px;
+        height: 50px;
     }
 </style>
 </head>
