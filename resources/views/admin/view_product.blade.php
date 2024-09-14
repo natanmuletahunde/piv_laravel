@@ -21,6 +21,7 @@
                         <th>Description</th>
                         <th>Category</th>
                         <th>Price</th>
+                        <th>Image</th>
                     </tr>
                   </table>
                   </div>
