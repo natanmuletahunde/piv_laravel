@@ -29,6 +29,25 @@
                     <label>Price</label>
                     <input type="price" name="price">
                 </div>
+                <div>
+                    <label>Quantity</label>
+                    <input type="number" name="Qty">
+                </div>
+
+                <div>
+                    <label>Product category</label>
+                     <select name="" id="">
+                      <option value="">
+                        abc
+                      </option>
+
+                     </select>
+                </div>
+
+                <div>
+                    <label>Product Image</label>
+                    <input type="file" name="image">
+                </div>
             </form>
             </div>
             </div>
