@@ -62,7 +62,7 @@
                 </div>
                 <div class="input_deg">
                     <label>Quantity</label>
-                    <input type="number" name="Qty">
+                    <input type="number" name="qty">
                 </div>
 
                 <div class="input_deg">
