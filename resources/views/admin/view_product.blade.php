@@ -48,6 +48,7 @@
                         <th>Description</th>
                         <th>Category</th>
                         <th>Price</th>
+                        <th>quantity</th>
                         <th>Image</th>
                     </tr>
                     <tr>
@@ -56,15 +57,20 @@
                         <td>ABC</td>
                         <td>ABC</td>
                         <td>ABC</td>
+                        <td>ABC</td>
+
 
                     </tr>
-                   @foreach ($product as $product )
+                   @foreach ($product as $products )
                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{$products->title}}</td>
+                        <td>{{$products->description}}</td>
+                        <td>{{$products->category}}</td>
+                        <td>{{$products->price}}</td>
+                        <td>{{$products->quantity}}</td>
+                        <td>
+                           <img height="120" width="120" src="products/{{$products->image}}">
+                        </td>
                     </tr>
                    @endforeach
                   </table>
