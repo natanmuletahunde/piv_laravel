@@ -39,6 +39,10 @@ class  AdminController extends Controller
        $data->save();
        return redirect("/view_category");
    }
-
+     
+   public function add_product()
+{
+    
+}
 }
    
