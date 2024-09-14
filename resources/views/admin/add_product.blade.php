@@ -21,6 +21,14 @@
                     <label> Product Title</label>
                     <input type="text" name="title">
                 </div>
+                <div>
+                    <label> Desrcription </label>
+                    <input type="descriotion" name="description">
+                </div>
+                <div>
+                    <label>Price</label>
+                    <input type="price" name="price">
+                </div>
             </form>
             </div>
             </div>
