@@ -58,14 +58,15 @@
                         <td>ABC</td>
 
                     </tr>
-
-                    <tr>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
-                        <td>ABC</td>
+                   @foreach ($product as $product )
+                   <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
+                   @endforeach
                   </table>
                   </div>
             </div>
