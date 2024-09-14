@@ -46,7 +46,8 @@
               <h1>Add Product</h1>
             <div class="div_deg">
 
-            <form action="">
+            <form action="{{url('upload_product')}}" method="post" enctype="multipart/form-data">
+                @csrf
                 <div class="input_deg">
                     <label> Product Title</label>
                     <input type="text" name="title">
@@ -66,11 +67,14 @@
 
                 <div class="input_deg">
                     <label>Product category</label>
-                     <select name="" id="">
+                     <select name="category" required >
                       <option value="">
-                        abc
+                         Select  a option
+                        
                       </option>
-
+                       @foreach ($category as $category)
+                        <option value="{{$category->category_name }}">{{$category->category_name }}</option>
+                       @endforeach
                      </select>
                 </div>
 
