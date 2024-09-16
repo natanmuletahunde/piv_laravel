@@ -15,6 +15,11 @@
         width: 200px;
         padding: 20px;
     }
+    textarea
+    {
+        width: 400px;
+        height: 80px;
+    }
 </style>
 </head>
 <body>
