@@ -50,6 +50,8 @@
                         <th>Price</th>
                         <th>quantity</th>
                         <th>Image</th>
+                        <th>Delete</th>
+
                     </tr>
                     <tr>
                         <td>ABC</td>
@@ -70,6 +72,10 @@
                         <td>{{$products->quantity}}</td>
                         <td>
                            <img height="120" width="120" src="products/{{$products->image}}">
+                        </td>
+
+                        <td>
+                            <a class="btn btn-danger" href="Delete"></a>
                         </td>
                     </tr>
                    @endforeach
