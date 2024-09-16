@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 Route::get("/", [HomeController::class,'home']);
 
 Route::get('/dashboard', function () {
@@ -45,6 +46,8 @@ Route::get('delete_product/{id}',[AdminController::class,'delete_product'])->mid
 Route::get('update_product/{id}',[AdminController::class,'update_product'])->middleware(['auth','admin']);
 
 Route::post('edit_product/{id}',[AdminController::class,'edit_product'])->middleware(['auth','admin']);
+
+Route::put('/edit_product/{id}', [AdminController::class, 'update_product']);
 
 
 

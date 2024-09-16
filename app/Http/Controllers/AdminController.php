@@ -92,7 +92,8 @@ class  AdminController extends Controller
   public function update_product($id)
   {
     $data = Product::find($id);
-    return view('admin.update_page', compact('data'));
+    $category =Category::all();
+    return view('admin.update_page', compact('data' ,'category') );
 
   }
   
@@ -115,8 +116,6 @@ class  AdminController extends Controller
        }
        $data->save();
        return redirect('/view_product');
-
-
      }
   
 }

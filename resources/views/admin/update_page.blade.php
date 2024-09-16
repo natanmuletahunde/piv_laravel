@@ -40,7 +40,9 @@
 
                 <div class="dev_deg">
                     <form action="{{url('edit_product', $data->id)}}" method="post" enctype="multipart/form-data">
-
+                         
+                    @csrf
+                    @method('PUT')
                     <div>
                         <label for="">Title</label>
                         <input type="text" name="title" value="{{$data->title}}">
@@ -61,11 +63,18 @@
                     <label>Quantity</label>
                     <input type="number" name="quantity" value="{{$data->quantity}}">
                    </div>
-
+                     <!-- #region -->
                    <div>
                     <label>Category</label>
                     <select name="category" id="">
                         <option value="">{{$data->category}}</option>
+
+                        @foreach ( $category as $category )
+                        <option value="{{$category->category_name}}">
+                         {{$category->category_name}}</option>
+                        </option>
+                        @endforeach
+                    
                     </select>
                    </div>
 
