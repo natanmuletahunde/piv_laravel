@@ -15,6 +15,11 @@
         width: 200px;
         padding: 20px;
     }
+    input[type="text"]
+    {
+        width: 300px;
+        height: 60px; 
+    }
     textarea
     {
         width: 400px;
@@ -34,7 +39,7 @@
                 <h2>Update Product</h2>
 
                 <div class="dev_deg">
-                    <form action="">
+                    <form action="{{url('edit_product', $data->id)}}" method="post" enctype="multipart/form-data">
 
                     <div>
                         <label for="">Title</label>
@@ -67,6 +72,12 @@
                    <div>
                      <label for="">Current Image</label>
                      <img width="150"  src="/products/{{$data->image}}" alt="">
+                   </div>
+
+                   <div>
+
+                   <label>New Image</label>
+                   <input type="file" name="image">
                    </div>
 
                    <div>
