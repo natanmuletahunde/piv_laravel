@@ -3,6 +3,18 @@
 
 <head>
 @include('admin.css');
+<style>
+     .dev_deg{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+     }
+
+
+
+
+</style>
 </head>
 <body>
     @include('admin.header');
@@ -15,7 +27,7 @@
                 <div class="container-fluid">
                 <h2>Update Product</h2>
 
-                <div>
+                <div class="dev_deg">
                     <form action="">
 
                     <div>
