@@ -64,7 +64,7 @@
                    @foreach ($product as $products )
                    <tr>
                         <td>{{$products->title}}</td>
-                        <td>{{$products->description}}</td>
+                        <td>{!!Str::limit ($products->description,50)!!}</td>
                         <td>{{$products->category}}</td>
                         <td>{{$products->price}}</td>
                         <td>{{$products->quantity}}</td>
