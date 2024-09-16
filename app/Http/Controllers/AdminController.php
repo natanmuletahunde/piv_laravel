@@ -91,7 +91,8 @@ class  AdminController extends Controller
 
   public function update_product($id)
   {
-    return view('admin.update_page', compact('id'));
+    $data = Product::find($id);
+    return view('admin.update_page', compact('data'));
 
   }
   
