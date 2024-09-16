@@ -76,7 +76,12 @@
                   </table>
                   
                   </div>
+                  <div class="div_deg"> 
+
                   {{$product->links()}}
+
+                  </div>
+                
             </div>
         </div>
     </div>
