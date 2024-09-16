@@ -7,13 +7,14 @@
      .dev_deg{
         display:flex;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center; 
      }
-
-
-
-
+     label
+     {
+        display:inline-block;
+        width: 200px;
+        padding: 20px;
+    }
 </style>
 </head>
 <body>
