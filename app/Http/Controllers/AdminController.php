@@ -80,7 +80,10 @@ class  AdminController extends Controller
   public function delete_product($id){
     $data= Product::find($id);
     $data->delete();
-    return redirect()->back();  
+    return redirect()->back(); 
+    toastr()->timeOut(1000)->closeButton()->addSuccess('Product deleted successfully');
+    return redirect()->back();
+    
   }
   
 }
