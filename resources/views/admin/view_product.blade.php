@@ -75,7 +75,7 @@
                         </td>
 
                         <td>
-                            <a class="btn btn-danger" href="Delete"></a>
+                            <a class="btn btn-danger" href="{{url('delete_product',$products->id)}}">Delete</a>
                         </td>
                     </tr>
                    @endforeach
