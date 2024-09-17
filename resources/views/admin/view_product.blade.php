@@ -40,6 +40,11 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
+                    <form action="">
+                       <input type="search" name="search"> 
+                       <input type="submit" class="btn btn-secondary" value="search" > 
+
+                    </form>
                   <div  class="div_deg">
 
                   <table class="table_deg" >
