@@ -40,9 +40,7 @@
 
                 <div class="dev_deg">
                     <form action="{{url('edit_product', $data->id)}}" method="post" enctype="multipart/form-data">
-                         
-                    @csrf
-                    @method('PUT')
+                        
                     <div>
                         <label for="">Title</label>
                         <input type="text" name="title" value="{{$data->title}}">
