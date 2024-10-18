@@ -41,9 +41,9 @@
 
         @auth
 
-        <form method="POST" action="{{ route('logout') }}">
+        <form style="padding:10px" method="POST" action="{{ route('logout') }}">
           @csrf
-          <input type="submit" value="logout">
+          <input class="btn btn-success" type="submit" value="logout">
 
         </form>
         @else
@@ -60,16 +60,8 @@
             Register
           </span>
         </a>
-
-
-        <a href="">
-          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-        </a>
-        <form class="form-inline ">
-          <button class="btn nav_search-btn" type="submit">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </button>
-        </form>
+        @endauth 
+        @endif
       </div>
     </div>
   </nav>
