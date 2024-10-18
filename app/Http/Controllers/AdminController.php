@@ -117,6 +117,12 @@ class  AdminController extends Controller
        $data->save();
        return redirect('/view_product');
      }
+
+  public function product_search(Request $request){
+
+     $search = $request->search;
+     $product = Product::where('title','LIKE','%'.$search.'%')->paginate(3);
+  }
   
 }
    
