@@ -44,7 +44,8 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-                    <form action="">
+                    <form action="{{url('product_search')}}" method="get">
+                        @csrf
                        <input type="search" name="search"> 
                        <input type="submit" class="btn btn-secondary" value="search" > 
 
