@@ -47,6 +47,12 @@
               Register
               </span>
             </a>
+            <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                          <input type="submit" value="logout">
+                    
+                        </form>
+
             <a href="">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </a>
