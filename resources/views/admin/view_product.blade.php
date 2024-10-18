@@ -26,9 +26,13 @@
     {
         border:1px solid skyblue;
         text-align: center;
-
-
     }
+     input[type="text"]
+     {
+        width: 500px;
+        height: 60px;
+        margin-left:50px;
+     }
 </style>
 </head>
 <body>
