@@ -41,7 +41,11 @@
 
         @auth
 
-        <form style="padding:10px" method="POST" action="{{ route('logout') }}">
+        <a href="">
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </a>
+
+        <form style="padding:15px" method="POST" action="{{ route('logout') }}">
           @csrf
           <input class="btn btn-success" type="submit" value="logout">
 
