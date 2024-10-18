@@ -27,7 +27,7 @@
         border:1px solid skyblue;
         text-align: center;
     }
-     input[type="text"]
+     input[type="search"]
      {
         width: 500px;
         height: 60px;
