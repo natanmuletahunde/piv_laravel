@@ -12,7 +12,7 @@
                 <div class="box">
                     <a href="">
                         <div class="img-box">
-                            <img src="images/p1.png" alt="">
+                            <img src="products/{{$products->image}}" alt="">
                         </div>
                         <div class="detail-box">
                             <h6>
