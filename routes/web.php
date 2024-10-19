@@ -58,7 +58,7 @@ Route::post('edit_product/{id}',[AdminController::class,'edit_product']);
 // ->middleware(['auth','admin']);
 Route::get('product_search', [AdminController::class, 'product_search']);
 
-
+Route::get('product_details/{id}', [HomeController::class, 'product_details']);
 
 
 
